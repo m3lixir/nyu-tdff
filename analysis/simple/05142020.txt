@@ -1,0 +1,580 @@
+mksavic@tabby:~$ cd git/tdes/research2018/
+mksavic@tabby:~/git/tdes/research2018$ python3 tdes.py nucleo_f207zg
+[DEBUG] 2020-05-14 19:21:11.247828: Program start.
+[DEBUG] 2020-05-14 19:21:35.403495: record() took 24.155038595199585 seconds to complete
+[DEBUG] 2020-05-14 19:21:38.748622: replay() took 3.3449885845184326 seconds to complete
+[DEBUG] 2020-05-14 19:21:38.786940: new (pc, label) pair (0x8003fc2, 1)
+[DEBUG] 2020-05-14 19:21:38.798593: new (pc, label) pair (0x8003fc2, 2)
+[DEBUG] 2020-05-14 19:21:41.231998: new blocks encountered from previous input {'0x800451a', '0x8008da4', '0x8004aae', '0x8004a14', '0x8008d92', '0x8000dbe', '0x8003b3e', '0x8003f02
+', '0x80017a8', '0x80039d4', '0x8000d12', '0x80002ee', '0x8003c18', '0x8008daa', '0x8004480', '0x8002d8e', '0x80017a4', '0x8000cec', '0x8004452', '0x8003ef8', '0x80049e0', '0x80077c
+c', '0x8003fc2', '0x800a220', '0x80040f6', '0x8004514', '0x8000bdc', '0x8004410', '0x8004eea', '0x8003bc6', '0x8009ed8', '0x800a494', '0x8004c9e', '0x8004c92', '0x8000bd4', '0x8000d
+da', '0x8000da6', '0x800a23c', '0x8005ff4', '0x800a208', '0x8000270', '0x8000c0e', '0x800a52e', '0x80040ae', '0x8000bf8', '0x80045ea', '0x8003f24', '0x8000b6c', '0x80045b2', '0x8003
+91e', '0x800a34e', '0x800359e', '0x8000c9e', '0x8000a42', '0x8004bea', '0x800353e', '0x8000da2', '0x8004ad0', '0x80044be', '0x8004710', '0x80040a2', '0x80040e8', '0x800471c', '0x800
+2d9e', '0x80045e8', '0x8003598', '0x8000d52', '0x8003fac', '0x80049fe', '0x8003996', '0x8000b6e', '0x800a1ac', '0x8000ac0', '0x8003c30', '0x8000e22', '0x8001312', '0x80012f4', '0x80
+03940', '0x8004a30', '0x80017ca', '0x80044ba', '0x8003bfe', '0x800a298', '0x8005e28', '0x8003972', '0x8004040', '0x8003f1e', '0x8002ee6', '0x8004d36', '0x800447c', '0x8005484', '0x8
+0045ba', '0x80039b8', '0x8003fe0', '0x8000de4', '0x80077b8', '0x8000cb0', '0x80045d4', '0x8004522', '0x800030e', '0x8006054', '0x8006028', '0x8000b92', '0x8000d3c', '0x8004b90', '0x
+80002f8', '0x80039c0', '0x8004a78', '0x8000ad0', '0x8000b64', '0x8004e00', '0x800a1a4', '0x8003f06', '0x8003626', '0x80044f6', '0x8003bf6', '0x8004bd8', '0x8000dcc', '0x8000c30', '0
+x8003fba', '0x8003b4e', '0x8004a9e', '0x8004a6e', '0x800601c', '0x8003f2c', '0x8003946', '0x8000314', '0x8003bb0', '0x8004456', '0x8005b72', '0x80002de', '0x8002df0', '0x8003964', '
+0x80044b0', '0x8000dfa', '0x8000e34', '0x8004a86', '0x800a1b6', '0x8002eb4', '0x8007154', '0x800253e', '0x80045dc', '0x8003f22', '0x8000e2e', '0x80002c8', '0x8000e08', '0x800251c',
+'0x8004064', '0x8004778', '0x8002db2', '0x80034c0', '0x8000aee', '0x800397c', '0x8004df8', '0x800251e', '0x800a35a', '0x8000cde', '0x8004cb8', '0x8003600', '0x8000d4e', '0x8000c12',
+ '0x8000c3a', '0x8004a44', '0x80044d2', '0x8000c1c', '0x8002ed2', '0x8004950', '0x8004576', '0x8004a80', '0x8000c00', '0x8000cdc', '0x800440c', '0x8002526', '0x8003c10', '0x8000cc8'
+, '0x800548e', '0x8007168', '0x00', '0x800607e', '0x8002edc', '0x8003f90', '0x8000e4a', '0x8000c94', '0x8000e1a', '0x8000dde', '0x8003b3a', '0x8004d84', '0x8007164', '0x8001320', '0
+x8000d08', '0x8008d96', '0x8000ba8', '0x800353a', '0x8000c2a', '0x8000e78', '0x80039e0', '0x8000e62', '0x8004a64', '0x8004564', '0x800405a', '0x8000e7e', '0x8000b66', '0x800a47c', '
+0x8004b8e', '0x8000b84', '0x8003bd8', '0x8003f0e', '0x8003604', '0x8000d58', '0x8002dba', '0x8000bea', '0x80049f2', '0x8003f9c', '0x8003fc6', '0x8004530', '0x8006050', '0x80035f8',
+'0x800600c', '0x80002e6', '0x8000d42', '0x8000b54', '0x80044ea', '0x8002ec6', '0x8003be0', '0x80077d0', '0x8003bfa', '0x800a20e', '0x80025f0', '0x800602e', '0x8000bf2', '0x8000b74',
+ '0x800476c', '0x8004be2', '0x800356a', '0x80025e6', '0x8004b86', '0x80009fc', '0x8004eb0', '0x8000b00', '0x8003f32', '0x80071a8', '0x8004060', '0x8000e42', '0x800603a', '0x8003912'
+, '0x80040c0', '0x800396c', '0x8003906', '0x8004a3a', '0x8006000', '0x800253a', '0x8003fb0', '0x800a1b2', '0x800718c', '0x8003980', '0x8004720', '0x8000ce2', '0x8004e1a', '0x8000db0
+', '0x8003d36', '0x800404a', '0x8004f02', '0x8003c40', '0x80034b0', '0x8006058', '0x8004754', '0x8004f24', '0x8004e98', '0x8004cae', '0x80038d8', '0x80017bc', '0x8004536', '0x8000c0
+8', '0x8000cf6', '0x80040aa', '0x8000bfc', '0x8002dae', '0x8000bc0', '0x8004996', '0x80044c4', '0x80017ce', '0x8000b78', '0x8003c2a', '0x8003c06', '0x8000e28', '0x800360e', '0x8000b
+ee', '0x8000c18', '0x8008d2c', '0x800179e', '0x8000cba', '0x8004bd4', '0x8000ab4', '0x800604c', '0x8003fce', '0x8003bc2', '0x8000aba', '0x8004460', '0x8000be6', '0x800407c', '0x8003
+900', '0x8004d5c', '0x8006008', '0x8000cac', '0x80039d0', '0x8000e3c', '0x80044cc', '0x80071ac', '0x8000d26', '0x80044f2', '0x80044da', '0x8007194', '0x800528e', '0x8003624', '0x800
+4a2a', '0x8001798', '0x8000d04', '0x80045e0', '0x80038f0', '0x8000b04', '0x8000e5c', '0x8002da2', '0x8000a48', '0x80002d2', '0x8003b46', '0x8000d20', '0x80039e4', '0x8004a0a', '0x80
+04d7e', '0x8003f16', '0x8000e0c', '0x8000dc2', '0x800a194', '0x80039da', '0x8000b62', '0x800a202', '0x8000df4', '0x80040f2', '0x8005b6a', '0x80043ec', '0x8004a02', '0x80039b0', '0x8
+003c02', '0x8004734', '0x8004a74', '0x8003566'}
+[DEBUG] 2020-05-14 19:21:41.232131: trying input... b'4\x00\n'
+[DEBUG] 2020-05-14 19:22:02.795143: record() took 21.562971591949463 seconds to complete
+[DEBUG] 2020-05-14 19:22:06.057272: replay() took 3.262028932571411 seconds to complete
+[DEBUG] 2020-05-14 19:22:08.534843: new blocks encountered from previous input {'0x8001304'}
+[DEBUG] 2020-05-14 19:22:08.534986: trying input... b'4\x01\n'
+[DEBUG] 2020-05-14 19:22:29.033012: record() took 20.49795961380005 seconds to complete
+[DEBUG] 2020-05-14 19:22:32.360319: replay() took 3.327207088470459 seconds to complete
+[DEBUG] 2020-05-14 19:22:34.791313: trying input... b'4\x02\n'
+[DEBUG] 2020-05-14 19:22:57.668232: record() took 22.876834869384766 seconds to complete
+[DEBUG] 2020-05-14 19:23:01.007924: replay() took 3.3395142555236816 seconds to complete
+[DEBUG] 2020-05-14 19:23:03.495393: trying input... b'4\x03\n'
+[DEBUG] 2020-05-14 19:23:27.449513: record() took 23.95404863357544 seconds to complete
+[DEBUG] 2020-05-14 19:23:30.710953: replay() took 3.261340379714966 seconds to complete
+[DEBUG] 2020-05-14 19:23:33.240789: trying input... b'4\x04\n'
+[DEBUG] 2020-05-14 19:23:56.206168: record() took 22.965298652648926 seconds to complete
+[DEBUG] 2020-05-14 19:23:59.536410: replay() took 3.330049753189087 seconds to complete
+[DEBUG] 2020-05-14 19:24:02.007608: trying input... b'4\x05\n'
+[DEBUG] 2020-05-14 19:24:21.919559: record() took 19.911880016326904 seconds to complete
+[DEBUG] 2020-05-14 19:24:25.186316: replay() took 3.2666187286376953 seconds to complete
+[DEBUG] 2020-05-14 19:24:27.694060: trying input... b'4\x06\n'
+[DEBUG] 2020-05-14 19:24:47.349407: record() took 19.65527319908142 seconds to complete
+[DEBUG] 2020-05-14 19:24:50.674243: replay() took 3.3246843814849854 seconds to complete
+[DEBUG] 2020-05-14 19:24:53.138776: trying input... b'4\x07\n'
+[DEBUG] 2020-05-14 19:25:15.956007: record() took 22.81715726852417 seconds to complete
+[DEBUG] 2020-05-14 19:25:19.429596: replay() took 3.473461389541626 seconds to complete
+[DEBUG] 2020-05-14 19:25:21.871015: trying input... b'4\x08\n'
+[DEBUG] 2020-05-14 19:25:42.874807: record() took 21.003716230392456 seconds to complete
+[DEBUG] 2020-05-14 19:25:46.218032: replay() took 3.343050718307495 seconds to complete
+[DEBUG] 2020-05-14 19:25:48.689200: trying input... b'4\t\n'
+[DEBUG] 2020-05-14 19:26:09.032975: record() took 20.34369993209839 seconds to complete
+[DEBUG] 2020-05-14 19:26:12.366411: replay() took 3.3333048820495605 seconds to complete
+[DEBUG] 2020-05-14 19:26:14.828822: trying input... b'4\n\n'
+[DEBUG] 2020-05-14 19:26:35.281389: record() took 20.452494621276855 seconds to complete
+[DEBUG] 2020-05-14 19:26:38.631668: replay() took 3.3501527309417725 seconds to complete
+[DEBUG] 2020-05-14 19:26:41.092640: trying input... b'4\x0b\n'
+[DEBUG] 2020-05-14 19:27:04.708851: record() took 23.616138696670532 seconds to complete
+[DEBUG] 2020-05-14 19:27:08.002756: replay() took 3.29375958442688 seconds to complete
+[DEBUG] 2020-05-14 19:27:10.495026: trying input... b'4\x0c\n'
+[DEBUG] 2020-05-14 19:27:30.469081: record() took 19.97397541999817 seconds to complete
+[DEBUG] 2020-05-14 19:27:33.754842: replay() took 3.285565137863159 seconds to complete
+[DEBUG] 2020-05-14 19:27:36.306478: trying input... b'4\r\n'
+[DEBUG] 2020-05-14 19:27:57.501322: record() took 21.194765090942383 seconds to complete
+[DEBUG] 2020-05-14 19:28:00.836037: replay() took 3.3345210552215576 seconds to complete
+[DEBUG] 2020-05-14 19:28:03.287443: trying input... b'4\x0e\n'
+[DEBUG] 2020-05-14 19:28:23.424249: record() took 20.136727809906006 seconds to complete
+[DEBUG] 2020-05-14 19:28:26.788621: replay() took 3.3641889095306396 seconds to complete
+[DEBUG] 2020-05-14 19:28:29.362840: trying input... b'4\x0f\n'
+[DEBUG] 2020-05-14 19:28:52.512515: record() took 23.14960265159607 seconds to complete
+[DEBUG] 2020-05-14 19:28:55.853247: replay() took 3.3406121730804443 seconds to complete
+[DEBUG] 2020-05-14 19:28:58.311303: trying input... b'4\x10\n'
+[DEBUG] 2020-05-14 19:29:24.439812: record() took 26.128435134887695 seconds to complete
+[DEBUG] 2020-05-14 19:29:27.768387: replay() took 3.3284475803375244 seconds to complete
+[DEBUG] 2020-05-14 19:29:30.224050: trying input... b'4\x11\n'
+[DEBUG] 2020-05-14 19:29:52.404857: record() took 22.180733680725098 seconds to complete
+[DEBUG] 2020-05-14 19:29:55.672917: replay() took 3.267909526824951 seconds to complete
+[DEBUG] 2020-05-14 19:29:58.139422: trying input... b'4\x12\n'
+[DEBUG] 2020-05-14 19:30:21.081131: record() took 22.941633701324463 seconds to complete
+[DEBUG] 2020-05-14 19:30:24.414297: replay() took 3.3330371379852295 seconds to complete
+[DEBUG] 2020-05-14 19:30:26.862872: trying input... b'4\x13\n'
+[DEBUG] 2020-05-14 19:30:48.032983: record() took 21.170028686523438 seconds to complete
+[DEBUG] 2020-05-14 19:30:51.413813: replay() took 3.380669355392456 seconds to complete
+[DEBUG] 2020-05-14 19:30:53.858503: trying input... b'4\x14\n'
+[DEBUG] 2020-05-14 19:31:21.017770: record() took 27.15919017791748 seconds to complete
+[DEBUG] 2020-05-14 19:31:24.303817: replay() took 3.2859153747558594 seconds to complete
+[DEBUG] 2020-05-14 19:31:26.802382: trying input... b'4\x15\n'
+[DEBUG] 2020-05-14 19:31:50.971487: record() took 24.169028282165527 seconds to complete
+[DEBUG] 2020-05-14 19:31:54.244465: replay() took 3.2727885246276855 seconds to complete
+[DEBUG] 2020-05-14 19:31:56.760081: trying input... b'4\x16\n'
+[DEBUG] 2020-05-14 19:32:18.499261: record() took 21.739103078842163 seconds to complete
+[DEBUG] 2020-05-14 19:32:18.747159: replay() took 0.24772000312805176 seconds to complete
+[DEBUG] 2020-05-14 19:32:18.763486: trying input... b'4\x17\n'
+[DEBUG] 2020-05-14 19:32:39.717474: record() took 20.95391297340393 seconds to complete
+[DEBUG] 2020-05-14 19:32:43.151516: replay() took 3.43391489982605 seconds to complete
+[DEBUG] 2020-05-14 19:32:45.635087: trying input... b'4\x18\n'
+[DEBUG] 2020-05-14 19:33:07.655166: record() took 22.020000219345093 seconds to complete
+[DEBUG] 2020-05-14 19:33:11.015125: replay() took 3.3597872257232666 seconds to complete
+[DEBUG] 2020-05-14 19:33:13.486518: trying input... b'4\x19\n'
+[DEBUG] 2020-05-14 19:33:39.753236: record() took 26.266637802124023 seconds to complete
+[DEBUG] 2020-05-14 19:33:43.052293: replay() took 3.298863649368286 seconds to complete
+[DEBUG] 2020-05-14 19:33:45.647037: trying input... b'4\x1a\n'
+[DEBUG] 2020-05-14 19:34:07.895744: record() took 22.248632669448853 seconds to complete
+[DEBUG] 2020-05-14 19:34:11.217797: replay() took 3.321925640106201 seconds to complete
+[DEBUG] 2020-05-14 19:34:13.665604: trying input... b'4\x1b\n'
+[DEBUG] 2020-05-14 19:34:33.937861: record() took 20.272178888320923 seconds to complete
+[DEBUG] 2020-05-14 19:34:37.310156: replay() took 3.372101068496704 seconds to complete
+[DEBUG] 2020-05-14 19:34:39.769904: trying input... b'4\x1c\n'
+[DEBUG] 2020-05-14 19:35:02.502925: record() took 22.73294496536255 seconds to complete
+[DEBUG] 2020-05-14 19:35:05.845334: replay() took 3.342299461364746 seconds to complete
+[DEBUG] 2020-05-14 19:35:08.298333: trying input... b'4\x1d\n'
+[DEBUG] 2020-05-14 19:35:31.447221: record() took 23.14881157875061 seconds to complete
+[DEBUG] 2020-05-14 19:35:34.743452: replay() took 3.296100616455078 seconds to complete
+[DEBUG] 2020-05-14 19:35:37.230048: trying input... b'4\x1e\n'
+[DEBUG] 2020-05-14 19:36:07.161469: record() took 29.931346654891968 seconds to complete
+[DEBUG] 2020-05-14 19:36:10.511940: replay() took 3.3503010272979736 seconds to complete
+[DEBUG] 2020-05-14 19:36:12.979206: trying input... b'4\x1f\n'
+[DEBUG] 2020-05-14 19:36:33.348295: record() took 20.36901307106018 seconds to complete
+[DEBUG] 2020-05-14 19:36:36.695989: replay() took 3.34759521484375 seconds to complete
+[DEBUG] 2020-05-14 19:36:39.209220: trying input... b'4 \n'
+[DEBUG] 2020-05-14 19:36:58.937793: record() took 19.728497743606567 seconds to complete
+[DEBUG] 2020-05-14 19:37:02.274616: replay() took 3.3366894721984863 seconds to complete
+[DEBUG] 2020-05-14 19:37:04.709516: trying input... b'4!\n'
+[DEBUG] 2020-05-14 19:37:26.311373: record() took 21.601778984069824 seconds to complete
+[DEBUG] 2020-05-14 19:37:29.661606: replay() took 3.3500561714172363 seconds to complete
+[DEBUG] 2020-05-14 19:37:32.134346: trying input... b'4"\n'
+[DEBUG] 2020-05-14 19:37:55.432030: record() took 23.2976131439209 seconds to complete
+[DEBUG] 2020-05-14 19:37:58.764203: replay() took 3.3320367336273193 seconds to complete
+[DEBUG] 2020-05-14 19:38:01.205119: trying input... b'4#\n'
+[DEBUG] 2020-05-14 19:38:20.637180: record() took 19.431989192962646 seconds to complete
+[DEBUG] 2020-05-14 19:38:23.907632: replay() took 3.2702717781066895 seconds to complete
+[DEBUG] 2020-05-14 19:38:26.417277: trying input... b'40\n'
+[DEBUG] 2020-05-14 19:38:47.941171: record() took 21.523820877075195 seconds to complete
+[DEBUG] 2020-05-14 19:38:51.212210: replay() took 3.2709357738494873 seconds to complete
+[DEBUG] 2020-05-14 19:38:53.669622: trying input... b'41\n'
+[DEBUG] 2020-05-14 19:39:16.413887: record() took 22.744186639785767 seconds to complete
+[DEBUG] 2020-05-14 19:39:19.736672: replay() took 3.322624921798706 seconds to complete
+[DEBUG] 2020-05-14 19:39:22.208996: trying input... b'42\n'
+[DEBUG] 2020-05-14 19:39:46.411216: record() took 24.20214533805847 seconds to complete
+[DEBUG] 2020-05-14 19:39:49.765343: replay() took 3.353992462158203 seconds to complete
+[DEBUG] 2020-05-14 19:39:52.201337: new blocks encountered from previous input {'0x8000310', '0x8000302', '0x800030a'}
+[DEBUG] 2020-05-14 19:39:52.201455: trying input... b'43\n'
+[DEBUG] 2020-05-14 19:40:15.303196: record() took 23.10168766975403 seconds to complete
+[DEBUG] 2020-05-14 19:40:18.629758: replay() took 3.3264360427856445 seconds to complete
+[DEBUG] 2020-05-14 19:40:21.111419: trying input... b'44\n'
+[DEBUG] 2020-05-14 19:40:46.797445: record() took 25.685955286026 seconds to complete
+[DEBUG] 2020-05-14 19:40:50.071969: replay() took 3.2744204998016357 seconds to complete
+[DEBUG] 2020-05-14 19:40:52.553396: trying input... b'45\n'
+[DEBUG] 2020-05-14 19:41:15.484290: record() took 22.930822610855103 seconds to complete
+[DEBUG] 2020-05-14 19:41:18.751960: replay() took 3.267570734024048 seconds to complete
+[DEBUG] 2020-05-14 19:41:21.217587: trying input... b'46\n'
+[DEBUG] 2020-05-14 19:41:47.303854: record() took 26.08619451522827 seconds to complete
+[DEBUG] 2020-05-14 19:41:47.553489: replay() took 0.24950575828552246 seconds to complete
+[DEBUG] 2020-05-14 19:41:47.570131: trying input... b'47\n'
+[DEBUG] 2020-05-14 19:42:14.483404: record() took 26.913182735443115 seconds to complete
+[DEBUG] 2020-05-14 19:42:17.821915: replay() took 3.338320255279541 seconds to complete
+[DEBUG] 2020-05-14 19:42:20.261087: trying input... b'48\n'
+[DEBUG] 2020-05-14 19:42:43.219431: record() took 22.958271265029907 seconds to complete
+[DEBUG] 2020-05-14 19:42:46.483292: replay() took 3.2637600898742676 seconds to complete
+[DEBUG] 2020-05-14 19:42:48.959398: trying input... b'49\n'
+[DEBUG] 2020-05-14 19:43:12.163512: record() took 23.204036951065063 seconds to complete
+[DEBUG] 2020-05-14 19:43:15.444812: replay() took 3.281156539916992 seconds to complete
+[DEBUG] 2020-05-14 19:43:17.899425: trying input... b'4<\n'
+[DEBUG] 2020-05-14 19:43:42.320858: record() took 24.421360731124878 seconds to complete
+[DEBUG] 2020-05-14 19:43:45.652437: replay() took 3.3314473628997803 seconds to complete
+[DEBUG] 2020-05-14 19:43:48.112828: trying input... b'4>\n'
+[DEBUG] 2020-05-14 19:44:08.789651: record() took 20.6767520904541 seconds to complete
+[DEBUG] 2020-05-14 19:44:12.053889: replay() took 3.2641103267669678 seconds to complete
+[DEBUG] 2020-05-14 19:44:14.534567: trying input... b'4?\n'
+[DEBUG] 2020-05-14 19:44:33.481322: record() took 18.946675777435303 seconds to complete
+[DEBUG] 2020-05-14 19:44:36.754292: replay() took 3.2727999687194824 seconds to complete
+[DEBUG] 2020-05-14 19:44:39.223991: trying input... b'4@\n'
+[DEBUG] 2020-05-14 19:45:01.357966: record() took 22.13389563560486 seconds to complete
+[DEBUG] 2020-05-14 19:45:01.605820: replay() took 0.2476825714111328 seconds to complete
+[DEBUG] 2020-05-14 19:45:01.623188: trying input... b'4`\n'
+[DEBUG] 2020-05-14 19:45:25.476331: record() took 23.853084564208984 seconds to complete
+[DEBUG] 2020-05-14 19:45:28.812533: replay() took 3.336047649383545 seconds to complete
+[DEBUG] 2020-05-14 19:45:31.268925: trying input... b'4p\n'
+[DEBUG] 2020-05-14 19:45:55.896640: record() took 24.627643585205078 seconds to complete
+[DEBUG] 2020-05-14 19:45:59.306787: replay() took 3.410005807876587 seconds to complete
+[DEBUG] 2020-05-14 19:46:01.719552: trying input... b'4x\n'
+[DEBUG] 2020-05-14 19:46:24.518642: record() took 22.79901361465454 seconds to complete
+[DEBUG] 2020-05-14 19:46:27.852319: replay() took 3.3334929943084717 seconds to complete
+[DEBUG] 2020-05-14 19:46:30.327987: trying input... b'4|\n'
+[DEBUG] 2020-05-14 19:46:52.624863: record() took 22.296803951263428 seconds to complete
+[DEBUG] 2020-05-14 19:46:55.892210: replay() took 3.2672200202941895 seconds to complete
+[DEBUG] 2020-05-14 19:46:58.401539: trying input... b'4~\n'
+[DEBUG] 2020-05-14 19:47:23.211448: record() took 24.80983591079712 seconds to complete
+[DEBUG] 2020-05-14 19:47:26.560036: replay() took 3.3484623432159424 seconds to complete
+[DEBUG] 2020-05-14 19:47:29.001369: trying input... b'4\x7f\n'
+[DEBUG] 2020-05-14 19:47:50.196291: record() took 21.194849252700806 seconds to complete
+[DEBUG] 2020-05-14 19:47:53.497493: replay() took 3.3010690212249756 seconds to complete
+[DEBUG] 2020-05-14 19:47:55.991844: trying input... b'4\x80\n'
+[DEBUG] 2020-05-14 19:48:16.716505: record() took 20.7245876789093 seconds to complete
+[DEBUG] 2020-05-14 19:48:20.050327: replay() took 3.333693265914917 seconds to complete
+[DEBUG] 2020-05-14 19:48:22.513642: trying input... b'4\xc0\n'
+[DEBUG] 2020-05-14 19:48:43.586083: record() took 21.07236957550049 seconds to complete
+[DEBUG] 2020-05-14 19:48:46.845484: replay() took 3.2592759132385254 seconds to complete
+[DEBUG] 2020-05-14 19:48:49.352281: trying input... b'4\xdd\n'
+[DEBUG] 2020-05-14 19:49:11.579971: record() took 22.227611541748047 seconds to complete
+[DEBUG] 2020-05-14 19:49:14.925051: replay() took 3.344886064529419 seconds to complete
+[DEBUG] 2020-05-14 19:49:17.385645: trying input... b'4\xde\n'
+[DEBUG] 2020-05-14 19:49:39.921786: record() took 22.536069631576538 seconds to complete
+[DEBUG] 2020-05-14 19:49:43.178645: replay() took 3.256732940673828 seconds to complete
+[DEBUG] 2020-05-14 19:49:45.653866: trying input... b'4\xdf\n'
+[DEBUG] 2020-05-14 19:50:06.836432: record() took 21.182494401931763 seconds to complete
+[DEBUG] 2020-05-14 19:50:10.171905: replay() took 3.335343837738037 seconds to complete
+[DEBUG] 2020-05-14 19:50:12.612472: trying input... b'4\xe0\n'
+[DEBUG] 2020-05-14 19:50:31.768645: record() took 19.156097888946533 seconds to complete
+[DEBUG] 2020-05-14 19:50:35.100566: replay() took 3.331782579421997 seconds to complete
+[DEBUG] 2020-05-14 19:50:37.564810: trying input... b'4\xe1\n'
+[DEBUG] 2020-05-14 19:50:59.595739: record() took 22.03085470199585 seconds to complete
+[DEBUG] 2020-05-14 19:50:59.854017: replay() took 0.2581489086151123 seconds to complete
+[DEBUG] 2020-05-14 19:50:59.873071: trying input... b'4\xe2\n'
+[DEBUG] 2020-05-14 19:51:19.570323: record() took 19.697153091430664 seconds to complete
+[DEBUG] 2020-05-14 19:51:22.911635: replay() took 3.3411335945129395 seconds to complete
+[DEBUG] 2020-05-14 19:51:25.388378: trying input... b'4\xe3\n'
+[DEBUG] 2020-05-14 19:51:46.263273: record() took 20.874821186065674 seconds to complete
+[DEBUG] 2020-05-14 19:51:49.579340: replay() took 3.3159382343292236 seconds to complete
+[DEBUG] 2020-05-14 19:51:52.139904: trying input... b'4\xe4\n'
+[DEBUG] 2020-05-14 19:52:18.489862: record() took 26.349878311157227 seconds to complete
+[DEBUG] 2020-05-14 19:52:21.774669: replay() took 3.2846484184265137 seconds to complete
+[DEBUG] 2020-05-14 19:52:24.274088: trying input... b'4\xe5\n'
+[DEBUG] 2020-05-14 19:52:46.408745: record() took 22.134589433670044 seconds to complete
+[DEBUG] 2020-05-14 19:52:49.703292: replay() took 3.2944326400756836 seconds to complete
+[DEBUG] 2020-05-14 19:52:52.199374: trying input... b'4\xe6\n'
+[DEBUG] 2020-05-14 19:53:17.492404: record() took 25.292959690093994 seconds to complete
+[DEBUG] 2020-05-14 19:53:20.843162: replay() took 3.350637197494507 seconds to complete
+[DEBUG] 2020-05-14 19:53:23.287138: trying input... b'4\xe7\n'
+[DEBUG] 2020-05-14 19:53:43.380371: record() took 20.09315061569214 seconds to complete
+[DEBUG] 2020-05-14 19:53:46.719339: replay() took 3.3387680053710938 seconds to complete
+[DEBUG] 2020-05-14 19:53:49.187555: trying input... b'4\xe8\n'
+[DEBUG] 2020-05-14 19:54:14.821533: record() took 25.6338951587677 seconds to complete
+[DEBUG] 2020-05-14 19:54:18.083401: replay() took 3.2615966796875 seconds to complete
+[DEBUG] 2020-05-14 19:54:20.567499: trying input... b'4\xe9\n'
+[DEBUG] 2020-05-14 19:54:40.234896: record() took 19.667325735092163 seconds to complete
+[DEBUG] 2020-05-14 19:54:43.561105: replay() took 3.3261024951934814 seconds to complete
+[DEBUG] 2020-05-14 19:54:46.024924: trying input... b'4\xea\n'
+[DEBUG] 2020-05-14 19:55:05.222363: record() took 19.19736957550049 seconds to complete
+[DEBUG] 2020-05-14 19:55:08.576815: replay() took 3.354311943054199 seconds to complete
+[DEBUG] 2020-05-14 19:55:11.046179: trying input... b'4\xeb\n'
+[DEBUG] 2020-05-14 19:55:35.450175: record() took 24.40391445159912 seconds to complete
+[DEBUG] 2020-05-14 19:55:38.719178: replay() took 3.2688207626342773 seconds to complete
+[DEBUG] 2020-05-14 19:55:41.211823: trying input... b'4\xec\n'
+[DEBUG] 2020-05-14 19:56:09.676884: record() took 28.464979648590088 seconds to complete
+[DEBUG] 2020-05-14 19:56:12.936704: replay() took 3.2596182823181152 seconds to complete
+[DEBUG] 2020-05-14 19:56:15.440050: trying input... b'4\xed\n'
+[DEBUG] 2020-05-14 19:56:38.545930: record() took 23.105798959732056 seconds to complete
+[DEBUG] 2020-05-14 19:56:41.842740: replay() took 3.29660701751709 seconds to complete
+[DEBUG] 2020-05-14 19:56:44.345191: trying input... b'4\xee\n'
+[DEBUG] 2020-05-14 19:57:04.823755: record() took 20.478495836257935 seconds to complete
+[DEBUG] 2020-05-14 19:57:05.074061: replay() took 0.250199556350708 seconds to complete
+[DEBUG] 2020-05-14 19:57:05.090309: trying input... b'4\xef\n'
+[DEBUG] 2020-05-14 19:57:26.517802: record() took 21.4274320602417 seconds to complete
+[DEBUG] 2020-05-14 19:57:29.862697: replay() took 3.3447253704071045 seconds to complete
+[DEBUG] 2020-05-14 19:57:32.340537: trying input... b'4\xf0\n'
+[DEBUG] 2020-05-14 19:57:55.391318: record() took 23.050697803497314 seconds to complete
+[DEBUG] 2020-05-14 19:57:58.728804: replay() took 3.3372833728790283 seconds to complete
+[DEBUG] 2020-05-14 19:58:01.207642: trying input... b'4\xf1\n'
+[DEBUG] 2020-05-14 19:58:20.606451: record() took 19.398728370666504 seconds to complete
+[DEBUG] 2020-05-14 19:58:23.831872: replay() took 3.2252278327941895 seconds to complete
+[DEBUG] 2020-05-14 19:58:26.073957: trying input... b'4\xf2\n'
+[DEBUG] 2020-05-14 19:58:48.200126: record() took 22.126094579696655 seconds to complete
+[DEBUG] 2020-05-14 19:58:51.552224: replay() took 3.3519763946533203 seconds to complete
+[DEBUG] 2020-05-14 19:58:54.051113: trying input... b'4\xf3\n'
+[DEBUG] 2020-05-14 19:59:17.899877: record() took 23.848690271377563 seconds to complete
+[DEBUG] 2020-05-14 19:59:21.250544: replay() took 3.3505427837371826 seconds to complete
+[DEBUG] 2020-05-14 19:59:23.685271: trying input... b'4\xf4\n'
+[DEBUG] 2020-05-14 19:59:41.911193: record() took 18.225842237472534 seconds to complete
+[DEBUG] 2020-05-14 19:59:45.268474: replay() took 3.3570773601531982 seconds to complete
+[DEBUG] 2020-05-14 19:59:47.857730: trying input... b'4\xf5\n'
+[DEBUG] 2020-05-14 20:00:16.554722: record() took 28.696915864944458 seconds to complete
+[DEBUG] 2020-05-14 20:00:19.821797: replay() took 3.2669200897216797 seconds to complete
+[DEBUG] 2020-05-14 20:00:22.330493: trying input... b'4\xf6\n'
+[DEBUG] 2020-05-14 20:00:44.475347: record() took 22.14478302001953 seconds to complete
+[DEBUG] 2020-05-14 20:00:48.505992: replay() took 4.030512094497681 seconds to complete
+[DEBUG] 2020-05-14 20:00:50.899061: trying input... b'4\xf7\n'
+[DEBUG] 2020-05-14 20:01:14.282963: record() took 23.383827447891235 seconds to complete
+[DEBUG] 2020-05-14 20:01:17.641048: replay() took 3.357983112335205 seconds to complete
+[DEBUG] 2020-05-14 20:01:20.077201: trying input... b'4\xf8\n'
+[DEBUG] 2020-05-14 20:01:47.662764: record() took 27.58548378944397 seconds to complete
+[DEBUG] 2020-05-14 20:01:50.921255: replay() took 3.2583067417144775 seconds to complete
+[DEBUG] 2020-05-14 20:01:53.408334: trying input... b'4\xf9\n'
+[DEBUG] 2020-05-14 20:02:14.610824: record() took 21.202414989471436 seconds to complete
+[DEBUG] 2020-05-14 20:02:17.942508: replay() took 3.331533193588257 seconds to complete
+[DEBUG] 2020-05-14 20:02:20.388692: trying input... b'4\xfa\n'
+[DEBUG] 2020-05-14 20:02:41.738481: record() took 21.349704265594482 seconds to complete
+[DEBUG] 2020-05-14 20:02:45.073102: replay() took 3.334444522857666 seconds to complete
+[DEBUG] 2020-05-14 20:02:47.550425: trying input... b'4\xfb\n'
+[DEBUG] 2020-05-14 20:03:10.127925: record() took 22.577423572540283 seconds to complete
+[DEBUG] 2020-05-14 20:03:13.397384: replay() took 3.2692811489105225 seconds to complete
+[DEBUG] 2020-05-14 20:03:15.894470: trying input... b'4\xfc\n'
+[DEBUG] 2020-05-14 20:03:39.823901: record() took 23.929362297058105 seconds to complete
+[DEBUG] 2020-05-14 20:03:43.099721: replay() took 3.2757158279418945 seconds to complete
+[DEBUG] 2020-05-14 20:03:45.608109: trying input... b'4\xfd\n'
+[DEBUG] 2020-05-14 20:04:12.041084: record() took 26.43289041519165 seconds to complete
+[DEBUG] 2020-05-14 20:04:15.313778: replay() took 3.2725019454956055 seconds to complete
+[DEBUG] 2020-05-14 20:04:17.778406: trying input... b'4\xfe\n'
+[DEBUG] 2020-05-14 20:04:38.436414: record() took 20.65792965888977 seconds to complete
+[DEBUG] 2020-05-14 20:04:41.714784: replay() took 3.278172016143799 seconds to complete
+[DEBUG] 2020-05-14 20:04:44.207174: trying input... b'4\xff\n'
+[DEBUG] 2020-05-14 20:05:11.416482: record() took 27.209234476089478 seconds to complete
+[DEBUG] 2020-05-14 20:05:14.750159: replay() took 3.3335206508636475 seconds to complete
+[DEBUG] 2020-05-14 20:05:17.203322: trying input... b'\x00\x00\n'
+[DEBUG] 2020-05-14 20:05:37.615520: record() took 20.41212821006775 seconds to complete
+[DEBUG] 2020-05-14 20:05:40.946280: replay() took 3.330632209777832 seconds to complete
+[DEBUG] 2020-05-14 20:05:43.428712: trying input... b'\x01\x00\n'
+[DEBUG] 2020-05-14 20:06:06.415070: record() took 22.986284971237183 seconds to complete
+[DEBUG] 2020-05-14 20:06:09.688704: replay() took 3.2735342979431152 seconds to complete
+[DEBUG] 2020-05-14 20:06:12.138517: trying input... b'\x04\x00\n'
+[DEBUG] 2020-05-14 20:06:34.015395: record() took 21.876797676086426 seconds to complete
+[DEBUG] 2020-05-14 20:06:37.286157: replay() took 3.2705931663513184 seconds to complete
+[DEBUG] 2020-05-14 20:06:39.753619: trying input... b'\x08\x00\n'
+[DEBUG] 2020-05-14 20:06:59.450036: record() took 19.69633984565735 seconds to complete
+[DEBUG] 2020-05-14 20:07:02.780633: replay() took 3.330498456954956 seconds to complete
+[DEBUG] 2020-05-14 20:07:05.255730: trying input... b'\n\x00\n'
+[DEBUG] 2020-05-14 20:07:28.793954: record() took 23.538152933120728 seconds to complete
+[DEBUG] 2020-05-14 20:07:32.078851: replay() took 3.284799337387085 seconds to complete
+[DEBUG] 2020-05-14 20:07:34.600817: trying input... b'\x0b\x00\n'
+[DEBUG] 2020-05-14 20:07:53.598348: record() took 18.997456073760986 seconds to complete
+[DEBUG] 2020-05-14 20:07:56.928154: replay() took 3.3296377658843994 seconds to complete
+[DEBUG] 2020-05-14 20:07:59.391228: trying input... b'\x0c\x00\n'
+[DEBUG] 2020-05-14 20:08:22.656981: record() took 23.26567268371582 seconds to complete
+[DEBUG] 2020-05-14 20:08:25.973551: replay() took 3.3163793087005615 seconds to complete
+[DEBUG] 2020-05-14 20:08:28.455354: trying input... b'\x11\x00\n'
+[DEBUG] 2020-05-14 20:08:50.347957: record() took 21.89252281188965 seconds to complete
+[DEBUG] 2020-05-14 20:08:53.695536: replay() took 3.347435235977173 seconds to complete
+[DEBUG] 2020-05-14 20:08:56.164944: trying input... b'\x12\x00\n'
+[DEBUG] 2020-05-14 20:09:18.334913: record() took 22.16989302635193 seconds to complete
+[DEBUG] 2020-05-14 20:09:21.673059: replay() took 3.337970495223999 seconds to complete
+[DEBUG] 2020-05-14 20:09:24.173570: trying input... b'\x13\x00\n'
+[DEBUG] 2020-05-14 20:09:51.627050: record() took 27.453402757644653 seconds to complete
+[DEBUG] 2020-05-14 20:09:54.961547: replay() took 3.3343048095703125 seconds to complete
+[DEBUG] 2020-05-14 20:09:57.434453: trying input... b'\x14\x00\n'
+[DEBUG] 2020-05-14 20:10:22.382554: record() took 24.948029279708862 seconds to complete
+[DEBUG] 2020-05-14 20:10:25.725376: replay() took 3.342665672302246 seconds to complete
+[DEBUG] 2020-05-14 20:10:28.217608: trying input... b'\x15\x00\n'
+[DEBUG] 2020-05-14 20:10:51.449436: record() took 23.231752395629883 seconds to complete
+[DEBUG] 2020-05-14 20:10:54.785821: replay() took 3.336210250854492 seconds to complete
+[DEBUG] 2020-05-14 20:10:57.773954: trying input... b'\x16\x00\n'
+[DEBUG] 2020-05-14 20:11:25.927503: record() took 28.153464555740356 seconds to complete
+[DEBUG] 2020-05-14 20:11:29.235713: replay() took 3.3081071376800537 seconds to complete
+[DEBUG] 2020-05-14 20:11:31.685805: trying input... b'\x17\x00\n'
+[DEBUG] 2020-05-14 20:11:52.581289: record() took 20.8954074382782 seconds to complete
+[DEBUG] 2020-05-14 20:11:55.924169: replay() took 3.342717170715332 seconds to complete
+[DEBUG] 2020-05-14 20:11:58.387524: trying input... b'\x18\x00\n'
+[DEBUG] 2020-05-14 20:12:21.144199: record() took 22.756603956222534 seconds to complete
+[DEBUG] 2020-05-14 20:12:21.399221: replay() took 0.25492358207702637 seconds to complete
+[DEBUG] 2020-05-14 20:12:21.413330: trying input... b'\x19\x00\n'
+[DEBUG] 2020-05-14 20:12:41.121051: record() took 19.707659006118774 seconds to complete
+[DEBUG] 2020-05-14 20:12:44.447794: replay() took 3.326544761657715 seconds to complete
+[DEBUG] 2020-05-14 20:12:46.908345: trying input... b'\x1a\x00\n'
+[DEBUG] 2020-05-14 20:13:11.443814: record() took 24.535386323928833 seconds to complete
+[DEBUG] 2020-05-14 20:13:14.735770: replay() took 3.2918012142181396 seconds to complete
+[DEBUG] 2020-05-14 20:13:17.192674: trying input... b'\x1b\x00\n'
+[DEBUG] 2020-05-14 20:13:39.304852: record() took 22.11210584640503 seconds to complete
+[DEBUG] 2020-05-14 20:13:42.573759: replay() took 3.2687737941741943 seconds to complete
+[DEBUG] 2020-05-14 20:13:45.031847: trying input... b'\x1c\x00\n'
+[DEBUG] 2020-05-14 20:14:11.775584: record() took 26.743661642074585 seconds to complete
+[DEBUG] 2020-05-14 20:14:15.124649: replay() took 3.348916530609131 seconds to complete
+[DEBUG] 2020-05-14 20:14:17.589203: trying input... b'\x1d\x00\n'
+[DEBUG] 2020-05-14 20:14:37.933200: record() took 20.343926668167114 seconds to complete
+[DEBUG] 2020-05-14 20:14:41.258816: replay() took 3.3254799842834473 seconds to complete
+[DEBUG] 2020-05-14 20:14:43.715011: trying input... b'\x1e\x00\n'
+[DEBUG] 2020-05-14 20:15:04.819909: record() took 21.10481905937195 seconds to complete
+[DEBUG] 2020-05-14 20:15:08.150792: replay() took 3.330678939819336 seconds to complete
+[DEBUG] 2020-05-14 20:15:10.611463: trying input... b'\x1f\x00\n'
+[DEBUG] 2020-05-14 20:15:34.635222: record() took 24.02368474006653 seconds to complete
+[DEBUG] 2020-05-14 20:15:37.986296: replay() took 3.350947618484497 seconds to complete
+[DEBUG] 2020-05-14 20:15:40.447705: trying input... b' \x00\n'
+[DEBUG] 2020-05-14 20:16:00.393232: record() took 19.945448875427246 seconds to complete
+[DEBUG] 2020-05-14 20:16:03.708517: replay() took 3.3151073455810547 seconds to complete
+[DEBUG] 2020-05-14 20:16:06.196667: trying input... b'!\x00\n'
+[DEBUG] 2020-05-14 20:16:30.960400: record() took 24.763660192489624 seconds to complete
+[DEBUG] 2020-05-14 20:16:34.262202: replay() took 3.3017027378082275 seconds to complete
+[DEBUG] 2020-05-14 20:16:36.751020: trying input... b'"\x00\n'
+[DEBUG] 2020-05-14 20:17:00.027001: record() took 23.275906801223755 seconds to complete
+[DEBUG] 2020-05-14 20:17:03.294119: replay() took 3.2669742107391357 seconds to complete
+[DEBUG] 2020-05-14 20:17:05.758295: trying input... b'#\x00\n'
+[DEBUG] 2020-05-14 20:17:26.584879: record() took 20.82651162147522 seconds to complete
+[DEBUG] 2020-05-14 20:17:29.844592: replay() took 3.2596096992492676 seconds to complete
+[DEBUG] 2020-05-14 20:17:32.356458: trying input... b'$\x00\n'
+[DEBUG] 2020-05-14 20:17:52.920089: record() took 20.563562870025635 seconds to complete
+[DEBUG] 2020-05-14 20:17:56.176692: replay() took 3.2565009593963623 seconds to complete
+[DEBUG] 2020-05-14 20:17:58.654488: trying input... b'%\x00\n'
+[DEBUG] 2020-05-14 20:18:26.750580: record() took 28.096019983291626 seconds to complete
+[DEBUG] 2020-05-14 20:18:30.076308: replay() took 3.3255932331085205 seconds to complete
+[DEBUG] 2020-05-14 20:18:32.457104: trying input... b'&\x00\n'
+[DEBUG] 2020-05-14 20:18:55.737186: record() took 23.28001093864441 seconds to complete
+[DEBUG] 2020-05-14 20:18:59.086188: replay() took 3.3488969802856445 seconds to complete
+[DEBUG] 2020-05-14 20:19:01.567854: trying input... b"'\x00\n"
+[DEBUG] 2020-05-14 20:19:24.011041: record() took 22.443111419677734 seconds to complete
+[DEBUG] 2020-05-14 20:19:27.341909: replay() took 3.3307132720947266 seconds to complete
+[DEBUG] 2020-05-14 20:19:29.867955: trying input... b'(\x00\n'
+[DEBUG] 2020-05-14 20:19:52.934825: record() took 23.066798210144043 seconds to complete
+[DEBUG] 2020-05-14 20:19:56.269184: replay() took 3.334228754043579 seconds to complete
+[DEBUG] 2020-05-14 20:19:58.716328: trying input... b')\x00\n'
+[DEBUG] 2020-05-14 20:20:19.062207: record() took 20.345805168151855 seconds to complete
+[DEBUG] 2020-05-14 20:20:22.396715: replay() took 3.334381341934204 seconds to complete
+[DEBUG] 2020-05-14 20:20:24.846116: trying input... b'*\x00\n'
+[DEBUG] 2020-05-14 20:20:50.045712: record() took 25.199514865875244 seconds to complete
+[DEBUG] 2020-05-14 20:20:53.628239: replay() took 3.582327127456665 seconds to complete
+[DEBUG] 2020-05-14 20:20:56.064442: trying input... b'+\x00\n'
+[DEBUG] 2020-05-14 20:21:18.038999: record() took 21.974483489990234 seconds to complete
+[DEBUG] 2020-05-14 20:21:21.366405: replay() took 3.327280044555664 seconds to complete
+[DEBUG] 2020-05-14 20:21:23.833936: trying input... b',\x00\n'
+[DEBUG] 2020-05-14 20:21:45.063897: record() took 21.229880809783936 seconds to complete
+[DEBUG] 2020-05-14 20:21:48.849916: replay() took 3.78582763671875 seconds to complete
+[DEBUG] 2020-05-14 20:21:51.271139: trying input... b'-\x00\n'
+[DEBUG] 2020-05-14 20:22:13.567600: record() took 22.296388626098633 seconds to complete
+[DEBUG] 2020-05-14 20:22:16.881269: replay() took 3.3135666847229004 seconds to complete
+[DEBUG] 2020-05-14 20:22:19.355920: trying input... b'.\x00\n'
+[DEBUG] 2020-05-14 20:22:42.638390: record() took 23.282393217086792 seconds to complete
+[DEBUG] 2020-05-14 20:22:45.982237: replay() took 3.343677520751953 seconds to complete
+[DEBUG] 2020-05-14 20:22:48.476791: trying input... b'/\x00\n'
+[DEBUG] 2020-05-14 20:23:11.605957: record() took 23.129092931747437 seconds to complete
+[DEBUG] 2020-05-14 20:23:14.155871: replay() took 2.5497682094573975 seconds to complete
+[DEBUG] 2020-05-14 20:23:15.412836: trying input... b'0\x00\n'
+[DEBUG] 2020-05-14 20:23:36.959603: record() took 21.546695709228516 seconds to complete
+[DEBUG] 2020-05-14 20:23:40.303126: replay() took 3.3433971405029297 seconds to complete
+[DEBUG] 2020-05-14 20:23:42.757800: trying input... b'1\x00\n'
+[DEBUG] 2020-05-14 20:24:05.986433: record() took 23.228556156158447 seconds to complete
+[DEBUG] 2020-05-14 20:24:09.252976: replay() took 3.266404390335083 seconds to complete
+[DEBUG] 2020-05-14 20:24:11.742504: trying input... b'2\x00\n'
+[DEBUG] 2020-05-14 20:24:33.727102: record() took 21.98452138900757 seconds to complete
+[DEBUG] 2020-05-14 20:24:37.063058: replay() took 3.335798501968384 seconds to complete
+[DEBUG] 2020-05-14 20:24:39.544707: trying input... b'3\x00\n'
+[DEBUG] 2020-05-14 20:25:03.155356: record() took 23.610564708709717 seconds to complete
+[DEBUG] 2020-05-14 20:25:06.470263: replay() took 3.314763307571411 seconds to complete
+[DEBUG] 2020-05-14 20:25:08.920136: trying input... b'4\x00\n'
+[DEBUG] 2020-05-14 20:25:30.080200: record() took 21.159982681274414 seconds to complete
+[DEBUG] 2020-05-14 20:25:33.436434: replay() took 3.3560378551483154 seconds to complete
+[DEBUG] 2020-05-14 20:25:35.901248: trying input... b'5\x00\n'
+[DEBUG] 2020-05-14 20:26:01.349521: record() took 25.448192596435547 seconds to complete
+[DEBUG] 2020-05-14 20:26:04.634411: replay() took 3.2847206592559814 seconds to complete
+[DEBUG] 2020-05-14 20:26:07.105725: trying input... b'6\x00\n'
+[DEBUG] 2020-05-14 20:26:32.083172: record() took 24.977368116378784 seconds to complete
+[DEBUG] 2020-05-14 20:26:35.414667: replay() took 3.331322193145752 seconds to complete
+[DEBUG] 2020-05-14 20:26:37.863542: trying input... b'7\x00\n'
+[DEBUG] 2020-05-14 20:27:03.064459: record() took 25.200838565826416 seconds to complete
+[DEBUG] 2020-05-14 20:27:06.397256: replay() took 3.3326141834259033 seconds to complete
+[DEBUG] 2020-05-14 20:27:08.858703: trying input... b'8\x00\n'
+[DEBUG] 2020-05-14 20:27:29.190620: record() took 20.33183765411377 seconds to complete
+[DEBUG] 2020-05-14 20:27:32.497826: replay() took 3.3070297241210938 seconds to complete
+[DEBUG] 2020-05-14 20:27:35.003450: trying input... b'9\x00\n'
+[DEBUG] 2020-05-14 20:27:57.297071: record() took 22.29354476928711 seconds to complete
+[DEBUG] 2020-05-14 20:28:00.623938: replay() took 3.3266940116882324 seconds to complete
+[DEBUG] 2020-05-14 20:28:03.066470: trying input... b':\x00\n'
+[DEBUG] 2020-05-14 20:28:25.109164: record() took 22.042620420455933 seconds to complete
+[DEBUG] 2020-05-14 20:28:28.461716: replay() took 3.352390766143799 seconds to complete
+[DEBUG] 2020-05-14 20:28:30.886800: trying input... b';\x00\n'
+[DEBUG] 2020-05-14 20:28:54.326438: record() took 23.43956184387207 seconds to complete
+[DEBUG] 2020-05-14 20:28:54.575873: replay() took 0.24930810928344727 seconds to complete
+[DEBUG] 2020-05-14 20:28:54.587446: trying input... b'<\x00\n'
+[DEBUG] 2020-05-14 20:29:13.247194: record() took 18.65966033935547 seconds to complete
+[DEBUG] 2020-05-14 20:29:16.561045: replay() took 3.3137474060058594 seconds to complete
+[DEBUG] 2020-05-14 20:29:19.035780: trying input... b'=\x00\n'
+[DEBUG] 2020-05-14 20:29:40.635051: record() took 21.599188089370728 seconds to complete
+[DEBUG] 2020-05-14 20:29:43.974149: replay() took 3.3389933109283447 seconds to complete
+[DEBUG] 2020-05-14 20:29:46.479868: trying input... b'>\x00\n'
+[DEBUG] 2020-05-14 20:30:08.936425: record() took 22.4564847946167 seconds to complete
+[DEBUG] 2020-05-14 20:30:12.265699: replay() took 3.3291471004486084 seconds to complete
+[DEBUG] 2020-05-14 20:30:14.739810: trying input... b'?\x00\n'
+[DEBUG] 2020-05-14 20:30:36.646084: record() took 21.906198263168335 seconds to complete
+[DEBUG] 2020-05-14 20:30:39.907899: replay() took 3.2616498470306396 seconds to complete
+[DEBUG] 2020-05-14 20:30:42.357225: trying input... b'@\x00\n'
+[DEBUG] 2020-05-14 20:31:06.392573: record() took 24.035266637802124 seconds to complete
+[DEBUG] 2020-05-14 20:31:09.823428: replay() took 3.430635452270508 seconds to complete
+[DEBUG] 2020-05-14 20:31:12.239486: trying input... b'A\x00\n'
+[DEBUG] 2020-05-14 20:31:34.927392: record() took 22.687830209732056 seconds to complete
+[DEBUG] 2020-05-14 20:31:38.202173: replay() took 3.274675130844116 seconds to complete
+[DEBUG] 2020-05-14 20:31:40.663423: trying input... b'B\x00\n'
+[DEBUG] 2020-05-14 20:32:01.583866: record() took 20.92036461830139 seconds to complete
+[DEBUG] 2020-05-14 20:32:04.859709: replay() took 3.275674819946289 seconds to complete
+[DEBUG] 2020-05-14 20:32:07.356151: trying input... b'C\x00\n'
+[DEBUG] 2020-05-14 20:32:28.391220: record() took 21.034985303878784 seconds to complete
+[DEBUG] 2020-05-14 20:32:31.719933: replay() took 3.3285155296325684 seconds to complete
+[DEBUG] 2020-05-14 20:32:34.174540: trying input... b'D\x00\n'
+[DEBUG] 2020-05-14 20:33:00.854652: record() took 26.680036544799805 seconds to complete
+[DEBUG] 2020-05-14 20:33:04.116246: replay() took 3.2614352703094482 seconds to complete
+[DEBUG] 2020-05-14 20:33:06.547184: trying input... b'E\x00\n'
+[DEBUG] 2020-05-14 20:33:29.162265: record() took 22.615001678466797 seconds to complete
+[DEBUG] 2020-05-14 20:33:32.536433: replay() took 3.3739893436431885 seconds to complete
+[DEBUG] 2020-05-14 20:33:35.052314: trying input... b'F\x00\n'
+[DEBUG] 2020-05-14 20:34:01.635714: record() took 26.58332872390747 seconds to complete
+[DEBUG] 2020-05-14 20:34:04.943536: replay() took 3.3076586723327637 seconds to complete
+[DEBUG] 2020-05-14 20:34:07.486803: trying input... b'G\x00\n'
+[DEBUG] 2020-05-14 20:34:31.714320: record() took 24.227445125579834 seconds to complete
+[DEBUG] 2020-05-14 20:34:35.038662: replay() took 3.324219226837158 seconds to complete
+[DEBUG] 2020-05-14 20:34:37.473332: trying input... b'H\x00\n'
+[DEBUG] 2020-05-14 20:35:01.160788: record() took 23.687382459640503 seconds to complete
+[DEBUG] 2020-05-14 20:35:04.429387: replay() took 3.2684972286224365 seconds to complete
+[DEBUG] 2020-05-14 20:35:06.888244: trying input... b'I\x00\n'
+[DEBUG] 2020-05-14 20:35:28.611183: record() took 21.722866535186768 seconds to complete
+[DEBUG] 2020-05-14 20:35:31.954013: replay() took 3.342695951461792 seconds to complete
+[DEBUG] 2020-05-14 20:35:34.433242: trying input... b'J\x00\n'
+[DEBUG] 2020-05-14 20:35:59.961787: record() took 25.528465747833252 seconds to complete
+[DEBUG] 2020-05-14 20:36:03.224890: replay() took 3.2629082202911377 seconds to complete
+[DEBUG] 2020-05-14 20:36:05.667776: trying input... b'K\x00\n'
+[DEBUG] 2020-05-14 20:36:25.539332: record() took 19.871477127075195 seconds to complete
+[DEBUG] 2020-05-14 20:36:28.875361: replay() took 3.335836887359619 seconds to complete
+[DEBUG] 2020-05-14 20:36:31.341097: trying input... b'L\x00\n'
+[DEBUG] 2020-05-14 20:36:56.389026: record() took 25.04784870147705 seconds to complete
+[DEBUG] 2020-05-14 20:36:59.725706: replay() took 3.3364901542663574 seconds to complete
+[DEBUG] 2020-05-14 20:37:02.164069: trying input... b'M\x00\n'
+[DEBUG] 2020-05-14 20:37:22.846319: record() took 20.682175636291504 seconds to complete
+[DEBUG] 2020-05-14 20:37:26.281680: replay() took 3.4352078437805176 seconds to complete
+[DEBUG] 2020-05-14 20:37:28.738635: trying input... b'N\x00\n'
+[DEBUG] 2020-05-14 20:37:48.684824: record() took 19.94611430168152 seconds to complete
+[DEBUG] 2020-05-14 20:37:52.029298: replay() took 3.344346761703491 seconds to complete
+[DEBUG] 2020-05-14 20:37:54.483218: trying input... b'O\x00\n'
+[DEBUG] 2020-05-14 20:38:16.007013: record() took 21.52372097969055 seconds to complete
+[DEBUG] 2020-05-14 20:38:19.267942: replay() took 3.260821580886841 seconds to complete
+[DEBUG] 2020-05-14 20:38:21.811632: trying input... b'P\x00\n'
+[DEBUG] 2020-05-14 20:38:46.685563: record() took 24.87385129928589 seconds to complete
+[DEBUG] 2020-05-14 20:38:50.017595: replay() took 3.331851005554199 seconds to complete
+[DEBUG] 2020-05-14 20:38:52.488896: trying input... b'Q\x00\n'
+[DEBUG] 2020-05-14 20:39:14.425421: record() took 21.93644881248474 seconds to complete
+[DEBUG] 2020-05-14 20:39:17.753032: replay() took 3.327465772628784 seconds to complete
+[DEBUG] 2020-05-14 20:39:20.197037: trying input... b'R\x00\n'
+[DEBUG] 2020-05-14 20:39:47.928239: record() took 27.731125116348267 seconds to complete
+[DEBUG] 2020-05-14 20:39:51.245316: replay() took 3.3169188499450684 seconds to complete
+[DEBUG] 2020-05-14 20:39:53.739413: trying input... b'S\x00\n'
+[DEBUG] 2020-05-14 20:40:18.645609: record() took 24.906121969223022 seconds to complete
+[DEBUG] 2020-05-14 20:40:21.997190: replay() took 3.351436138153076 seconds to complete
+[DEBUG] 2020-05-14 20:40:24.497356: trying input... b'T\x00\n'
+[DEBUG] 2020-05-14 20:40:45.187977: record() took 20.69053840637207 seconds to complete
+[DEBUG] 2020-05-14 20:40:48.507213: replay() took 3.319030523300171 seconds to complete
+[DEBUG] 2020-05-14 20:40:50.942197: trying input... b'U\x00\n'
+[DEBUG] 2020-05-14 20:41:14.096243: record() took 23.15396523475647 seconds to complete
+[DEBUG] 2020-05-14 20:41:17.448140: replay() took 3.35174560546875 seconds to complete
+[DEBUG] 2020-05-14 20:41:19.907328: trying input... b'V\x00\n'
+[DEBUG] 2020-05-14 20:41:42.401739: record() took 22.494338274002075 seconds to complete
+[DEBUG] 2020-05-14 20:41:45.675404: replay() took 3.273540735244751 seconds to complete
+[DEBUG] 2020-05-14 20:41:48.199662: trying input... b'W\x00\n'
+[DEBUG] 2020-05-14 20:42:12.202218: record() took 24.00248384475708 seconds to complete
+[DEBUG] 2020-05-14 20:42:15.440110: replay() took 3.2377612590789795 seconds to complete
+[DEBUG] 2020-05-14 20:42:17.755206: trying input... b't\x00\n'
+[DEBUG] 2020-05-14 20:42:43.529918: record() took 25.77462863922119 seconds to complete
+[DEBUG] 2020-05-14 20:42:46.790244: replay() took 3.260122060775757 seconds to complete
+[DEBUG] 2020-05-14 20:42:49.319878: trying input... b'\xb4\x00\n'
+[DEBUG] 2020-05-14 20:43:14.035778: record() took 24.71582341194153 seconds to complete
+[DEBUG] 2020-05-14 20:43:17.380667: replay() took 3.3446848392486572 seconds to complete
+[DEBUG] 2020-05-14 20:43:19.918192: trying input... b'\xc4\x00\n'
+[DEBUG] 2020-05-14 20:43:40.085195: record() took 20.16692590713501 seconds to complete
+[DEBUG] 2020-05-14 20:43:43.452727: replay() took 3.3673319816589355 seconds to complete
+[DEBUG] 2020-05-14 20:43:46.001387: trying input... b'\xc8\x00\n'
+[DEBUG] 2020-05-14 20:44:06.564661: record() took 20.5632004737854 seconds to complete
+[DEBUG] 2020-05-14 20:44:09.879976: replay() took 3.3151650428771973 seconds to complete
+[DEBUG] 2020-05-14 20:44:12.370477: trying input... b'\xca\x00\n'
+[DEBUG] 2020-05-14 20:44:31.904094: record() took 19.533541679382324 seconds to complete
+[DEBUG] 2020-05-14 20:44:35.218433: replay() took 3.314216136932373 seconds to complete
+[DEBUG] 2020-05-14 20:44:37.719423: trying input... b'\xcb\x00\n'
+[DEBUG] 2020-05-14 20:44:57.652779: record() took 19.933278799057007 seconds to complete
+[DEBUG] 2020-05-14 20:45:00.969638: replay() took 3.3167572021484375 seconds to complete
+[DEBUG] 2020-05-14 20:45:03.465214: trying input... b'\xcc\x00\n'
+[DEBUG] 2020-05-14 20:45:28.702940: record() took 25.237656593322754 seconds to complete
+[DEBUG] 2020-05-14 20:45:32.028625: replay() took 3.325556993484497 seconds to complete
+[DEBUG] 2020-05-14 20:45:34.481355: trying input... b'\xd4\x00\n'
+[DEBUG] 2020-05-14 20:45:56.487309: record() took 22.005876064300537 seconds to complete
+[DEBUG] 2020-05-14 20:45:59.800309: replay() took 3.3128128051757812 seconds to complete
+[DEBUG] 2020-05-14 20:46:02.277301: trying input... b'\xf4\x00\n'
+[DEBUG] 2020-05-14 20:46:29.487056: record() took 27.209683895111084 seconds to complete
+[DEBUG] 2020-05-14 20:46:32.747015: replay() took 3.259828805923462 seconds to complete
+[DEBUG] 2020-05-14 20:46:35.216429: trying input... b'\xff\x00\n'
+[DEBUG] 2020-05-14 20:46:55.229324: record() took 20.01281976699829 seconds to complete
+[DEBUG] 2020-05-14 20:46:58.520188: replay() took 3.2906999588012695 seconds to complete
+[DEBUG] 2020-05-14 20:47:01.061073: Program took 5149.813241958618 seconds to complete.
+mksavic@tabby:~/git/tdes/research2018$

@@ -1,0 +1,4 @@
+*.pyc
+llvm-mod.bc
+examples/nucleo_l152re/inputs/*
+examples/nucleo_l152re/plogs/*

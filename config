@@ -1,0 +1,35 @@
+[nucleo_l152re]
+record_path = ./examples/nucleo_l152re/record/record.py
+input_dir = ./examples/nucleo_l152re/inputs
+plog_dir = ./examples/nucleo_l152re/plogs
+mmio_start_addr = 0x40004404
+mmio_end_addr = 0x40004408
+exit_addr = 0x08000c78
+label_offset = 0
+
+[nucleo_f207zg]
+record_path = ./examples/nucleo_f207zg/record/record.py
+input_dir = ./examples/nucleo_f207zg/inputs
+plog_dir = ./examples/nucleo_f207zg/plogs
+mmio_start_addr = 0x40004804
+mmio_end_addr = 0x40004808
+exit_addr = 0x08000e0c
+label_offset = 0
+
+[libtasn1_3_5]
+record_path = ./examples/libtasn1_3_5/record/record.py
+input_dir = ./examples/libtasn1_3_5/inputs
+plog_dir = ./examples/libtasn1_3_5/plogs
+mmio_start_addr = 0x40004804
+mmio_end_addr = 0x40004808
+exit_addr = 0x080012c0
+label_offset = 3
+
+[vuzzer]
+record_path = ./examples/vuzzer/record/record.py
+input_dir = ./examples/vuzzer/inputs
+plog_dir = ./examples/vuzzer/plogs
+mmio_start_addr = 0x40004804
+mmio_end_addr = 0x40004808
+exit_addr = 0x08000e18
+label_offset = 0
